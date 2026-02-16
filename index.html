@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Mudamos | El Ecosistema Startup</title>
+    <meta name="description" content="El Ecosistema Startup se mudó a Skool. Únete a nuestra nueva comunidad con mejores herramientas, contenido exclusivo y experiencia mejorada.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://www.skool.com/cagala-aprende-repite">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Nos Mudamos a Skool | El Ecosistema Startup">
+    <meta property="og:description" content="Nuestra comunidad ahora está en Skool. Mejores herramientas, mejor experiencia, mismo compromiso contigo.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://comunidad.ecosistemastartup.com">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #000000;
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding-top: clamp(2rem, 8vh, 4rem);
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(57, 255, 20, 0.1);
+            border: 1px solid #39ff14;
+            color: #39ff14;
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: clamp(2.2rem, 6vw, 3.5rem);
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #39ff14 0%, #00d4ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .lead {
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
+            color: #cccccc;
+            margin-bottom: 3rem;
+            line-height: 1.5;
+        }
+
+        .reason {
+            background: linear-gradient(135deg, rgba(57, 255, 20, 0.05) 0%, rgba(0, 212, 255, 0.05) 100%);
+            border-left: 4px solid #39ff14;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            border-radius: 8px;
+        }
+
+        .reason p {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        .reason p:last-child {
+            margin-bottom: 0;
+        }
+
+        .reason strong {
+            color: #39ff14;
+        }
+
+        .inside {
+            margin-bottom: 3rem;
+        }
+
+        .inside h2 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            color: #00d4ff;
+        }
+
+        .inside-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .inside-item {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .inside-item:hover {
+            border-color: #39ff14;
+            background: rgba(57, 255, 20, 0.03);
+        }
+
+        .inside-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .inside-item p {
+            color: #aaaaaa;
+            font-size: 1rem;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            margin: 3rem 0;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: rgba(0, 212, 255, 0.05);
+            border: 1px solid rgba(0, 212, 255, 0.2);
+            border-radius: 12px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #00d4ff;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #888888;
+            font-size: 0.9rem;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(135deg, #39ff14 0%, #00d4ff 100%);
+            color: #000000;
+            font-size: 1.4rem;
+            font-weight: 800;
+            padding: 1.4rem 3.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 40px rgba(57, 255, 20, 0.5);
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 60px rgba(57, 255, 20, 0.7);
+        }
+
+        .cta-button:active {
+            transform: translateY(-2px);
+        }
+
+        .cta-note {
+            margin-top: 1rem;
+            color: #666666;
+            font-size: 0.95rem;
+        }
+
+        .footer {
+            margin-top: 5rem;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: #666666;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #00d4ff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        .signature {
+            margin-top: 2rem;
+            font-style: italic;
+            color: #888888;
+        }
+
+        @media (max-width: 640px) {
+            .reason {
+                padding: 1.5rem;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .cta-button {
+                width: 100%;
+                padding: 1.2rem 2rem;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+
+    <script>
+        const currentPath = window.location.pathname;
+        console.log('Circle redirect from:', currentPath);
+        if (currentPath !== '/' && currentPath !== '/home') {
+            sessionStorage.setItem('circle_original_path', currentPath);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="badge">📍 Cambio de Casa</div>
+
+        <h1>
+            Circle Ya No Existe.<br>
+            <span class="highlight">Ahora Estamos en Skool.</span>
+        </h1>
+
+        <p class="lead">
+            Y no, no es solo un cambio de plataforma. Es un upgrade completo a cómo construimos comunidad juntos.
+        </p>
+
+        <div class="reason">
+            <p><strong>La verdad sin filtro:</strong> Circle me estaba costando $600 USD/mes para que tú tuvieras una experiencia mediocre.</p>
+            <p>Notificaciones que no llegaban. App móvil que crasheaba. Features "premium" que nadie usaba. Y yo pagando porque "es lo que usan las comunidades serias".</p>
+            <p>Hasta que me di cuenta: <strong>estar en una plataforma cara no te hace una mejor comunidad</strong>. Tener contenido valioso, conversaciones reales y gente comprometida — eso sí.</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number">~100</div>
+                <div class="stat-label">Miembros en Skool</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">11</div>
+                <div class="stat-label">Cursos ya publicados</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">8+</div>
+                <div class="stat-label">Más en roadmap 2026</div>
+            </div>
+        </div>
+
+        <div class="inside">
+            <h2>Qué hay en Skool ahora mismo</h2>
+            <div class="inside-grid">
+                <div class="inside-item">
+                    <h3>🤖 Automatización como tu primer empleado</h3>
+                    <p>n8n, IA, no-code tools. Aprende a hacer el trabajo de 3 personas mientras estás solo. Templates y workflows listos para copiar.</p>
+                </div>
+                <div class="inside-item">
+                    <h3>💬 Conversaciones reales sobre startups</h3>
+                    <p>Fundraising, exits, cagadas épicas, hospitalizaciones por estrés. Todo lo que NO te cuentan en LinkedIn.</p>
+                </div>
+                <div class="inside-item">
+                    <h3>📊 Experiencia documentada, no teoría</h3>
+                    <p>Exit de US$23M, 30+ inversiones, 3 hospitalizaciones. Números reales, errores reales, lecciones que costaron caras.</p>
+                </div>
+                <div class="inside-item">
+                    <h3>🎯 Cursos que se implementan</h3>
+                    <p>Nada de "qué hago con esto". Código, configuraciones, ejemplos reales. Lo ves, lo copias, lo usas en tu startup.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="inside">
+            <h2>El roadmap 2026: Automatización para emprendedores</h2>
+            <p style="color: #cccccc; margin-bottom: 1.5rem; font-size: 1.1rem;">
+                11 cursos ya publicados. <strong style="color: #39ff14;">8 más llegando entre febrero y agosto</strong> (Chatwoot + n8n, OpenClaw, Listmonk, Late API, WordPress automation, y más).
+            </p>
+            <p style="color: #cccccc; margin-bottom: 1.5rem; font-size: 1.1rem;">
+                La misión: <strong style="color: #00d4ff;">ayudarte a competir sin equipo todavía</strong>. IA + automatización como tu primer "empleado" mientras validas tu idea.
+            </p>
+            <p style="color: #aaaaaa; font-size: 1rem;">
+                No más "necesito contratar a alguien para hacer X". Aprende a automatizarlo, implementa, escala. Cuando tengas revenue real, ahí sí armas equipo.
+            </p>
+        </div>
+
+        <div class="reason">
+            <p><strong>¿Por qué Skool?</strong> Porque hace UNA cosa bien: comunidad + cursos en el mismo lugar.</p>
+            <p>Sin features que nadie usa. Sin tabs infinitos. Sin "¿dónde carajo dejé ese post?"</p>
+            <p>Entras, ves qué hay nuevo, aprendes algo útil, implementas. Así de simple.</p>
+        </div>
+
+        <div class="cta-section">
+            <a href="https://www.skool.com/cagala-aprende-repite" class="cta-button">
+                Entrar a la Comunidad
+            </a>
+            <p class="cta-note">Plan gratuito disponible • Cancela cuando quieras</p>
+        </div>
+
+        <div class="footer">
+            <p>¿Preguntas? Escríbeme directo: <a href="mailto:cristian@cristiantala.com">cristian@cristiantala.com</a></p>
+            <p style="margin-top: 1.5rem;">
+                <a href="https://cristiantala.com">cristiantala.com</a> • 
+                <a href="https://ecosistemastartup.com">ecosistemastartup.com</a>
+            </p>
+            <div class="signature">
+                — Cristian Tala<br>
+                Ex-founder Pago Fácil • Inversionista ángel • El que casi muere emprendiendo
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.cta-button').addEventListener('click', function() {
+            console.log('CTA clicked - redirecting to Skool');
+        });
+    </script>
+</body>
+</html>
