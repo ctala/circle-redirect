@@ -15,7 +15,7 @@ Landing page profesional para redirigir tráfico de `comunidad.ecosistemastartup
 ✅ **SEO-friendly** — Meta tags, canonical, noindex (no competir con Skool)  
 ✅ **Responsive** — Mobile-first, funciona perfecto en cualquier dispositivo  
 ✅ **Brand personal** — Colores Synthwave (verde #39ff14 + cyan #00d4ff)  
-✅ **Zero-friction CTA** — Botón directo a Skool + "Plan gratuito disponible"
+✅ **CTA** — «Quiero el Kit →» a la lista de espera por `go.aprenderepite.com/eco-articulo?utm_content=nos-mudamos` (17-nov-2026: la comunidad es de pago y está cerrada a nuevos miembros; nada dice «gratuito» ni enlaza directo a Skool)
 
 ## V2 Changes (2026-02-16)
 
